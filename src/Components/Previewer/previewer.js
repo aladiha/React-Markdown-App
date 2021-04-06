@@ -1,12 +1,15 @@
 import React from 'react';
 import './previewer.css'
+import ReactMarkdown from 'react-markdown'
+import {faFire} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Previewer = props => {
     return <div>
-        <h2>Type Here</h2>
-        <textarea id="previewer">
-            
-        </textarea>
+        <div id="title"><FontAwesomeIcon icon={faFire}/> Previewer</div>
+        <div id="previewer">
+            <ReactMarkdown source={props.markdown} />
+        </div>
     </div>
 };
 

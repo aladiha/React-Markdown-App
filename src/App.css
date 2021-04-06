@@ -1,3 +1,17 @@
+
+.container{
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://www.xmple.com/wallpaper/white-orange-gradient-linear-1920x1080-c2-ffffff-ffa500-a-90-f-14.svg");
+  border: solid orange 1px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .App {
   text-align: center;
   margin: 0;
@@ -8,3 +22,32 @@
   justify-content: space-evenly;
 }
 
+h1 {
+ 
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-style: italic;
+  color: black;
+}
+
+.aladin {
+  font-size: 1.6em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: bolder;
+  padding: 20px;
+}
+
+.mark {
+  color: #D45201;
+  font-size: 1.3em;
+}
+
+@media(max-width: 1500px){
+  .App{
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,14 +1,16 @@
 import React from 'react';
 import './editor.css'
+import {faFire} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Editor = props => {
     return <div>
-        <h2>Type Here</h2>
+        <div id="title"><FontAwesomeIcon icon={faFire}/> Editor</div>
         <textarea id="editor" 
         onChange={event => {
             props.onIdit(event.target.value)
         }}
-        />
+        placeholder="start typing .."/>
     </div>
 };
 
