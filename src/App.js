@@ -16,7 +16,7 @@ function App() {
   
   return (
     <div className="container">
-      <h1>React <span className="mark">Markdown</span> Previewr</h1>
+      <h1 id="header">React <span className="mark">Markdown</span> Previewr</h1>
       <div className="App">
         <Editor onIdit={onIdit}/>
         <Previewer markdown={value}/>

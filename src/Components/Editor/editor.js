@@ -10,7 +10,7 @@ const Editor = props => {
         onChange={event => {
             props.onIdit(event.target.value)
         }}
-        placeholder="start typing .."/>
+        placeholder="start typing .."></textarea>
     </div>
 };
 
